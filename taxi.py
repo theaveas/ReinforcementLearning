@@ -53,7 +53,6 @@ def main():
             
         # epsilon decay
         epsilon = np.exp(-decay_rate)
-        
     print(f'Training Complete over {episodes} episodes.')
     input('Press Enter to watch trained agent...')
     
@@ -70,9 +69,12 @@ def main():
         action = np.argmax(q_table[state, :])
         next_state, reward, done, _ = env.step(action)
         reward += reward
+    
         
         env.render()
         print(f'scores: {reward}')
+        
+        state = next_state
         
         if done:
             break
