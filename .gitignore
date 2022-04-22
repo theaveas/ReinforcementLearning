@@ -1,3 +1,5 @@
 
 .DS_Store
 *.pyc
+gettingstarted/.ipynb_checkpoints/n_step_sarsa-checkpoint.ipynb
+*.ipynb
