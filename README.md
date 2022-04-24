@@ -1,11 +1,13 @@
 # ReinforcementLearning
 Getting start with RL notebook I've taken during my learning journey. 
-- [gettingstarted]() - Introduction to Reinforcement Learning second edition Richard S. Sutton and Andrew G. Batto
+- [gettingstarted]() - Introduction to Reinforcement Learning second edition Richard S. Sutton and Andrew G. Batto [book📖](https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262039249/ref=sr_1_1?crid=79DCXH1XTMB3&keywords=introduction+to+reinforcement+learning&qid=1650816674&s=books&sprefix=introduction+to+reinfo%2Cstripbooks%2C328&sr=1-1)
 
-| Topics.         | ![Open in Github](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github) |
-| -------------   | ---- |
+
+| Topics.         | Github |
+| -------------   | :---------: |
 | MDPs Markov Decision Process  | [notebook]() |
 | Dynamic Programming           | [notebook]() |
+
 
 - [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/guide/install.html) - Quick intro on how to use RL framework `Stable-Baselines3` 
 
