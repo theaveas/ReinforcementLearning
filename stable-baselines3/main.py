@@ -1,5 +1,4 @@
 # introduction to stable-baselines3
-from re import L
 import gym
 import numpy as np
 
