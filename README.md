@@ -5,7 +5,7 @@ Getting start with RL notebook I've taken during my learning journey.
 
 | Topics.         | Github |
 | -------------   | :---------: |
-| MDPs Markov Decision Process  | [notebook]() |
+| MDPs Markov Decision Process  | [notebook](https://github.com/theaveas/ReinforcementLearning/blob/main/gettingstarted/01_mdps.ipynb) |
 | Dynamic Programming           | [notebook]() |
 
 
@@ -13,7 +13,7 @@ Getting start with RL notebook I've taken during my learning journey.
 
 | Topics.         | ---- |
 | -------------   | ---- |
-| Train RL using stable-baselines3 | [code]() |
+| Train RL using stable-baselines3 | [code](https://github.com/theaveas/ReinforcementLearning/blob/main/stable-baselines3/train.py) |
 | Save / Load a model | [code]() |
 | Create a custom environment | [code]() |
 
