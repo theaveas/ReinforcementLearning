@@ -35,6 +35,7 @@ def game_A2C():
     model = A2C('MlpPolicy', env, verbose=1)
     model.learn(total_timesteps=100000)
   
+    # play the game for 10 episodes
     for i in range(10):
         done = False
         state = env.reset()
