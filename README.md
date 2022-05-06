@@ -14,10 +14,11 @@ Getting start with RL notebook I've taken during my learning journey.
 | Dynamic Programming           | [notebook]() |
 
 
-- [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/guide/install.html) - Quick introdution on how to use RL framework `Stable-Baselines3` by solving [LunarLander](https://gym.openai.com/envs/LunarLander-v2/) environment. Download and interact with [Pretrained Model](https://huggingface.co/Theaveas/ppo-LunarLander-v2)
+- [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/guide/install.html) - Quick introdution on how to use RL framework `Stable-Baselines3` solving openai gym environment. Download and interact with [Pretrained Model](https://huggingface.co/Theaveas/ppo-LunarLander-v2)
 
-![lunarlander](https://user-images.githubusercontent.com/85100907/167092749-e450a039-e18d-4fc6-98b3-a368d0704b73.gif)
-
+![lunarlander](https://github.com/theaveasso/ReinforcementLearning/blob/main/stable-baselines3/lunarlander.gif)
+![mountaincar](https://github.com/theaveasso/ReinforcementLearning/blob/main/stable-baselines3/mountaincar.gif)
+![bipedalwalker](https://github.com/theaveasso/ReinforcementLearning/blob/main/stable-baselines3/bipedalwalker.gif)
 
 
 
