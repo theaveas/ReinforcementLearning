@@ -8,7 +8,7 @@ import gym
 from stable_baselines3 import PPO # learning algorithm
 from stable_baselines3.common.evaluation import evaluate_policy # evaluate policy to eval the model
 from stable_baselines3.common.monitor import Monitor
-from stable_baselines3.common.vec_env import DummyVecEnv, VecFrameStack
+from stable_baselines3.common.vec_env import DummyVecEnv
 from stable_baselines3.common.callbacks import CheckpointCallback, CallbackList, EvalCallback
 
 # make log and optimize model direction
@@ -98,7 +98,8 @@ if __name__ == "__main__":
     mean_reward, std_reward= evaluate_policy(model, env, n_eval_episodes=10, deterministic=True)
     print(f'Mean reward: {mean_reward:.2f}, Standard diviation reward per episode:{std_reward}')
     
-    # Enjoy the trained agent
+    # Enjoy the trained agent 
+    # Render out the environment
     for i in range(5):
         done = False
         state = env.reset()
