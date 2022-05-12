@@ -46,7 +46,6 @@ def value_iteration(p_h, theta=1e-4, gamma=1.):
         """
         A = np.zeros(101)
         stakes = range(1, min(s, 100-s) + 1)
-        print(stakes)
         for a in stakes:
             # rewards[s+a], rewards[s-a] are immediate reward
             # V[s+a], V[s-a] are values of the next states
@@ -55,7 +54,6 @@ def value_iteration(p_h, theta=1e-4, gamma=1.):
         
         return A
     
-    return policy, V
 
     # value iteration
     while True:
@@ -65,7 +63,7 @@ def value_iteration(p_h, theta=1e-4, gamma=1.):
         for s in range(1, 100):
             # one step lookahead to find the best action
             A = one_step_lookahead(s, V, rewards)
-            print(s, A, V)
+            # print(s, A, V)
             best_action_value = np.max(A)
             # calculate delta across all states seen so far
             delta = max(delta, np.abs(best_action_value - V[s]))
@@ -83,3 +81,35 @@ def value_iteration(p_h, theta=1e-4, gamma=1.):
         policy[s] = best_action
         
     return policy, V
+
+
+# capital vs value estimate
+def plot_graph(v):
+    x = range(100)
+    y = v[:100]
+    
+    plt.plot(x, y)
+    plt.xlabel('Captial')
+    plt.ylabel('Value Estimates')
+    plt.title('Final Policy (action state) vs State (Capital)')
+    plt.show()
+    
+
+# capital vs optimal policy
+def plot_policy(policy):
+    x = range(100)
+    y = policy
+    
+    plt.bar(x, y, align='center', alpha=.5)
+    plt.xlabel('Captial')
+    plt.ylabel('Final policy (stake)')
+    plt.title('Capital vs Final Policy')
+    plt.show()
+    
+    
+if __name__ == '__main__':
+    policy, v = value_iteration(.25)
+    plot_graph(v)
+    plot_policy(policy)
+
+    
