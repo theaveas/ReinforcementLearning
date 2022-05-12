@@ -1,1 +1,15 @@
 **Summary**
+- Reinforcement learning is about learning problems fromm interaction how to behave in order to achieve a goal.
+- The Reinforcement learning *agent* and *environment* interact over a sequence of discrete time steps `t`.
+- The *actions* are the choices made by the agent, the *states* are the basis for making the choices and the *rewards* are the basis for evaluating the choices.
+- A *policy* is a stochastic rule by which the agent selects actions as a function of states. The agent's objective is to maximize the amount of reward it receives over time.
+- The *return* `G` is the function of future rewards that the agent seeks to maximize (in expected value).
+- *Markov Decision Process* is formulated with a well defined transition probabilities of the future state and reward the agent recieve base on the action the agent took in the current state `p(s', r | s, a)`.
+- A finite MDP is an MDP with finite state, action, and reward sets.
+- The value function `v(s)` estimates how good it is for an agent to be in a particular state. 
+- The action value function (q table) `q(s,a)`: estimates how good it is for anagent to be in state `s` and take action `a`.
+- *Episodic taskes*, in which the agent-environment interaction breaks naturally into episodes.
+- *Continuing tasks*, in which the interaction does not naturally break into episodes byt continues without limit.
+- Policy's *value function* assign to each state, or state-action pair, the expected return from the state, or state-action pair, given that the agent use the policy. The optimal value functions assign to each state, or state-action pair, the largest expected return achiecvable by any policy. A policy whose value functions are optimal is an optimal policy.
+- The *Bellman optimality equation* are special consistency conditions that the optimal value functions must satisfy and that can, in principle, be solved for the optimal value functions, from which an optimal policy can be dermined with relative ease.
+- In MDP, the agent is typically unable to perform enough computation per time step to fully use it. The memory available is also an important constraint. Meomory may be required to build up accurate approxomations of value functions, policies, and models. 
